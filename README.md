@@ -5,7 +5,7 @@ Home: https://github.com/axiom-data-science/wera2netcdf
 
 Package license: MIT License
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A utility to convert WERA total ASCII files into CF NetCDF files.
 
