@@ -1,27 +1,29 @@
+{% set version = "0.0.4" %}
+
 package:
-    name: wera2netcdf
-    version: 0.0.4
+  name: wera2netcdf
+  version: {{ version }}
 
 source:
-    fn: wera2netcdf-0.0.4.tar.gz
-    url: https://pypi.python.org/packages/source/w/wera2netcdf/wera2netcdf-0.0.4.tar.gz
-    md5: e0e34c8477c849d0aea9b64b04ff1395
+  fn: wera2netcdf-{{ version }}.tar.gz
+  url: https://github.com/axiom-data-science/wera2netcdf/archive/{{ version }}.tar.gz
+  sha256: 403efce348910b7358700efbb73bc191f8f80e2f70c84aa1f67ae8c08142b1c7
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - pandas
-        - netcdf4
-        - pygc
-        - pytz
-        - python-dateutil
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - pandas
+    - netcdf4
+    - pygc
+    - pytz
+    - python-dateutil
 
 test:
   imports:
@@ -32,8 +34,8 @@ test:
 
 about:
   home: https://github.com/axiom-data-science/wera2netcdf
-  license: MIT License
-  summary: A utility to convert WERA total ASCII files into CF NetCDF files.
+  license: MIT
+  summary: 'A utility to convert WERA total ASCII files into CF NetCDF files.'
 
 extra:
     recipe-maintainers:
