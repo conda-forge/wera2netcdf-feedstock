@@ -1,4 +1,4 @@
-{% set version = "0.0.4" %}
+{% set version = "1.0.0" %}
 
 package:
   name: wera2netcdf
@@ -7,7 +7,7 @@ package:
 source:
   fn: wera2netcdf-{{ version }}.tar.gz
   url: https://github.com/axiom-data-science/wera2netcdf/archive/{{ version }}.tar.gz
-  sha256: 403efce348910b7358700efbb73bc191f8f80e2f70c84aa1f67ae8c08142b1c7
+  sha256: eb3b37ee163cc4fbbba032f9ae3279eac582fa87d2b0d741a993abb2c947c36a
 
 build:
   number: 0
@@ -38,6 +38,6 @@ about:
   summary: 'A utility to convert WERA total ASCII files into CF NetCDF files.'
 
 extra:
-    recipe-maintainers:
-        - kwilcox
-        - ocefpaf
+  recipe-maintainers:
+    - kwilcox
+    - ocefpaf
